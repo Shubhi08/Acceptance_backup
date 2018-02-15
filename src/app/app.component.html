@@ -1,0 +1,50 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="100" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<div class="container">
+    <div>	
+        <div class="app-header">
+            <div class="app-heading"><h2>CREW LEAVE</h2> </div>
+            <div class="cds-logo_without-boeing-margin-50-percent app-logo" > </div>
+        <!-- modal adding -->
+
+        </div>
+
+        <div class='panel-body'>
+
+                <div class='col-xs-5 col-sm-5 col-md-5 col-lg-5 form-group'>
+                    <label htmlFor='fromDate'>From</label><span >*</span>
+                    <input type='date' class='form-control' [(ngModel)]="fromDate"  (blur) ="showdateinfo()" />
+                </div>
+
+                <!-- div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                    <input class="form-control" type="text" readonly />
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                </div -->
+                <div class='col-xs-2 col-sm-2 col-md-2 col-lg-2 form-group' align='center'>
+                    <br/>
+                    -
+                </div>
+                <div class='col-xs-5 col-sm-5 col-md-5 col-lg-5 form-group'>
+                    <label htmlFor='toDate'>To</label>
+                    <input type='date' class='form-control' [(ngModel)]="toDate"   />
+                </div>
+                <div class='btn-toolbar pull-right ' >
+                    <button type='button' class='btn btn-default' (click)=" hideQuota()"  > Cancel </button>
+                    <button type='button' class='btn btn-primary' (click)=" showQuota()"> Show Quota </button>
+                </div>
+
+        </div>
+    </div>
+    <div *ngIf="showQuotaPanel" >
+        <app-quota [vacationDate] = "parentString" ></app-quota>
+    </div>
+    
+
+</div>	
+
+

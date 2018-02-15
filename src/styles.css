@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+
+@media screen and (max-width: 768px) {
+    h2{
+        font-size:14px;
+    }
+}
+.app-header {
+    background-color: #467db8;
+    height: 60px;
+    padding: 10px;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+  }
+
+  
+  .app-heading {
+      margin-top: -10px;
+      padding-left:20px;
+      width: 50%;
+  }
+  
+  .app-logo {
+      margin: 10px !important;
+      text-align: right;
+  }
+  
+  .time-off {
+      background-image: url('assets/resources/logo/jeppesen-logo-without-boeing.svg');
+      width: 35px;
+      height: 35px;
+      background-repeat: no-repeat;
+  }
+  
+  .panel {
+      margin-top: 20px;
+  }
+  
+  .panel-default > .panel-heading {
+      background-color: #ffffff !important;
+  }
+  .cds-panel-header__main {
+      padding-left: 20px;
+  }
+  
+  input[type="date"] {
+    background-color : #c1dbf8; 
+  }
+
+  label{margin-left: 20px;}
+#datepicker{width:180px; margin: 0 20px 20px 20px;}
+#datepicker > span:hover{cursor: pointer;}
+
+ /* .modal-dialog {
+    position:absolute;
+    top:50% !important;
+    transform: translate(0, -50%) !important;
+    -ms-transform: translate(0, -50%) !important;
+    -webkit-transform: translate(0, -50%) !important;
+    margin:auto 5%;
+    width:90%;
+    height:80%;
+  }
+  .modal-content {
+    min-height:100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0; 
+  }
+  .modal-body {
+    position:absolute;
+    top:45px; 
+    bottom:45px;  
+    left:0;
+    right:0;
+    overflow-y:auto;
+  }
+  .modal-footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+  } */
+  
+  
